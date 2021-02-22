@@ -29,6 +29,11 @@ gem 'awesome_print'
 gem 'kaminari'
 gem 'kaminari-i18n'
 gem 'cocoon'
+gem 'prawn-rails'
+gem 'redis'
+gem 'hiredis'
+gem 'trix'
+gem 'searchkick'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
 # Use ActiveModel has_secure_password

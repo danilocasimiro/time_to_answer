@@ -1,0 +1,22 @@
+var element = document.getElementById("submit_<%= @question_id %>");
+
+element.classList.remove('btn-default');
+element.classList.remove('btn-success');
+element.classList.remove('btn-danger');
+
+if(<%= @correct %>){
+  element.classList.add('btn-success');
+  message('Você acertou =)', 'success')
+}else{
+  element.classList.add('btn-danger');
+  message('Você errou =(', 'danger')
+}
+
+function message(value, type){
+  $.bootstrapGrowl(value, {
+    type: type,
+    align: 'right',
+    allow_dismiss: true,
+    stackup_spacing: 10
+});
+}
